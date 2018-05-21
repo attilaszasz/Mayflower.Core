@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.25302.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayflower.Core", "Mayflower.Core\Mayflower.Core.csproj", "{1E14F9D5-A6AC-47D1-BC4C-B3ED0F2E1BDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MayflowerCLI.Core", "MayflowerCLI.Core\MayflowerCLI.Core.csproj", "{D03F3F8B-1684-4BE2-84F0-6D2331A61314}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E14F9D5-A6AC-47D1-BC4C-B3ED0F2E1BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E14F9D5-A6AC-47D1-BC4C-B3ED0F2E1BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E14F9D5-A6AC-47D1-BC4C-B3ED0F2E1BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E14F9D5-A6AC-47D1-BC4C-B3ED0F2E1BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03F3F8B-1684-4BE2-84F0-6D2331A61314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03F3F8B-1684-4BE2-84F0-6D2331A61314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03F3F8B-1684-4BE2-84F0-6D2331A61314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03F3F8B-1684-4BE2-84F0-6D2331A61314}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E56E049-5526-47A8-9A62-33F34A1B1138}
+	EndGlobalSection
+EndGlobal

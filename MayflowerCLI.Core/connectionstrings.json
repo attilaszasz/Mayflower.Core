@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "Data": "Data Source=DESKTOP-0N97VIJ;Initial Catalog=bandit-core;persist security info=True;user id=bandit;password=bandit;MultipleActiveResultSets=True;ConnectRetryCount=3;ConnectRetryInterval=3;Connection Timeout=9"
+  }
+}
