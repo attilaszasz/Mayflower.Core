@@ -48,7 +48,7 @@ Typical usage is simply:
 dotnet MayflowerCLI.Core.dll
 ```
 
-Various options can be changed in the appsettings.json file. The connection string to the database is in the connectionstrings.json file:
+Various options can be changed in the [appsettings.json](https://github.com/attilaszasz/Mayflower.Core/blob/master/MayflowerCLI.Core/appsettings.json) file. The connection string to the database is in the [connectionstrings.json](https://github.com/attilaszasz/Mayflower.Core/blob/master/MayflowerCLI.Core/connectionstrings.json) file:
 
 ```
 appsettings.json
@@ -98,4 +98,4 @@ Many migration systems have a notion of reversing a migration or "downgrading" i
 
 ## License
 
-Mayflower is available under the [MIT License]().
+Mayflower is available under the [MIT License](https://github.com/attilaszasz/Mayflower.Core/blob/master/LICENSE).
