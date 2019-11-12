@@ -8,18 +8,8 @@ using System.Text.RegularExpressions;
 
 namespace Mayflower
 {
-    public class Migrator : IDisposable
+    public sealed class Migrator : IDisposable
     {
-        public class MigrationResult
-        {
-            public bool Success { get; internal set; }
-            public int Attempted { get; internal set; }
-            public int Ran { get; internal set; }
-            public int Skipped { get; internal set; }
-            public int Renamed { get; internal set; }
-            public int Forced { get; internal set; }
-            public Exception Exception { get; internal set; }
-        }
         readonly ConnectionContext _db;
         bool _tableExists;
         readonly bool _isPreview;
@@ -86,6 +76,7 @@ namespace Mayflower
         public void Dispose()
         {
             _db?.Dispose();
+            GC.SuppressFinalize(this);
         }
 
         public static string GetVersion()
@@ -164,7 +155,7 @@ namespace Mayflower
                             result.Renamed++;
                             break;
                         default:
-                            throw new ArgumentOutOfRangeException();
+                            throw new ArgumentOutOfRangeException(message: "Unknown migration mode", null);
                     }
                 }
 

@@ -52,6 +52,8 @@ namespace Mayflower
         public void Dispose()
         {
             _connection?.Dispose();
+            _transaction?.Dispose();
+            GC.SuppressFinalize(this);
         }
 
         internal void Open()

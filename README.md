@@ -2,7 +2,7 @@
 
 Mayflower is a simple, forward-only, database migrator for SQL Server based on the migrator which Stack Overflow uses.
 
-This is a port to .Net Core of Bret Cope's [Mayflower.NET](https://github.com/bretcope/Mayflower.NET) project.  
+This is a port to .Net Core of Bret Cope's [Mayflower.NET](https://github.com/bretcope/Mayflower.NET) project.
 
 ## Usage
 
@@ -15,7 +15,7 @@ CREATE TABLE One
 (
   Id int not null identity(1,1),
   Name nvarchar(50) not null,
-  
+
   constraint PK_One primary key clustered (Id)
 )
 GO
@@ -40,7 +40,7 @@ We recommend prefixing migration file names with a zero-padded number so that th
 
 #### Command Line
 
-The easiest way to run migrations is from command line. It requires .NET Core 2 or above.
+The easiest way to run migrations is from command line. It requires .NET Core 3 or above.
 
 Typical usage is simply:
 
@@ -74,6 +74,7 @@ connectionstrings.json
   }
 }
 ```
+
 #### Programmatic
 
 If you'd prefer, Mayflower can be called via code. Include Mayflower.Core in your solution and reference it in your project.

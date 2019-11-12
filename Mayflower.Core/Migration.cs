@@ -33,7 +33,7 @@ namespace Mayflower
             Hash = GetHash(sql);
             Filename = Path.GetFileName(filePath);
 
-            UseTransaction = !sql.StartsWith("-- no transaction --");
+            UseTransaction = !sql.StartsWith("-- no transaction --", StringComparison.InvariantCultureIgnoreCase);
         }
 
         internal MigrateMode GetMigrateMode(AlreadyRan alreadyRan)
